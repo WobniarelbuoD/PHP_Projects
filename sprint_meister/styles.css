@@ -1,0 +1,50 @@
+.NotButton {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.NotButton:hover {
+    color: gold;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.NotButton2 {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.NotButton2:hover {
+    border: solid 1px white;
+    background-color: orange;
+    color: white;
+    margin: 0;
+}
+
+.Highlight {
+    border: solid 1px white;
+    background-color: orange;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.AddButton{
+    background: none;
+    border: none;
+    padding: 10px;
+}
+.AddButton:hover{
+    color:orange;
+}
+.DarkTims{
+    width:100vw;
+    height:100vh;
+    background-color:#0000008c;
+    position:fixed
+}
