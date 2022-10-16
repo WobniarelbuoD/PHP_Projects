@@ -1,0 +1,21 @@
+{
+    "name": "admin/project_without_a_soul",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/models/Product.php"
+        ],
+        "psr-4": {
+            "Admin\\ProjectWithoutASoul\\": "src/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.13",
+        "symfony/cache": "^6.1",    
+        "doctrine/annotations": "^1.13"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.1"
+    }
+}
