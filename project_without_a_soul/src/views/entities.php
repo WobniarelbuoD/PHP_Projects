@@ -24,10 +24,18 @@ if(isset($_GET['delete'])){
     redirect_to_root();
 }
 
-// Update
+// Update name
 if(isset($_POST['update_name'])){
     $user = $entityManager->find('Product', $_POST['update_id']);
     $user->setName($_POST['update_name']);
+    $entityManager->flush();
+    redirect_to_root();
+}
+
+print($_POST['update_id']);
+if(isset($_POST['update_content'])){
+    $user = $entityManager->find('Product', $_POST['update_id']);
+    $user->setContent($_POST['update_content']);
     $entityManager->flush();
     redirect_to_root();
 }

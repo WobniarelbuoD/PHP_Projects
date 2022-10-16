@@ -10,8 +10,8 @@
     <!-- <div class='text-center mt-5'><h1 class='mb-5'>Home</h1><img src="https://media4.giphy.com/media/THlB4bsoSA0Cc/200.gif" alt="skeleton" width="100%" height="100%"></div> -->
 
     <?php 
-        require_once 'bootstrap.php';
-        $kebab =$entityManager->getRepository('Product')->findBy(array('name' => substr($_SERVER['PATH_INFO'], 1)));
+        require_once "bootstrap.php";
+        $kebab = $entityManager->getRepository('Product')->findBy(array('name' => substr($_SERVER['PATH_INFO'], 1)));
         // dd($kebab);
         // $test = substr($_SERVER['PATH_INFO'], 1);
         var_dump($kebab[0]->getId());
