@@ -1,11 +1,10 @@
 <?php
 require_once "bootstrap.php";
 if(isset($_POST['edit'])){
-$product = $entityManager->find('Product', $_POST['edit']);
+$product = $entityManager->find('model\Product', $_POST['edit']);
 $product = htmlspecialchars($product->getContent());
-// print($product->getContent())
+
 }
-var_dump($_POST['edit']);
 ?>
 <div style='z-index:10;position:fixed;width:100vw;height:100vh;' class=' DarkTims d-flex flex-wrap justify-content-center align-items-center'>
     <div style='height:95vh; width:95vw' class='bg-light p-5 text-dark border border-warning'>

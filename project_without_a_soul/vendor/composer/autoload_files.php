@@ -16,4 +16,5 @@ return array(
     'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
     'ddb8e5702c7dbe802f458a8ee5a1b2da' => $baseDir . '/src/models/Product.php',
+    '063abea1680219364894f1c1be867ba2' => $baseDir . '/src/models/User.php',
 );

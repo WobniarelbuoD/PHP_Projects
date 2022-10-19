@@ -1,4 +1,5 @@
 <?php
+namespace model;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
@@ -19,14 +20,14 @@ class Product {
     protected $name;
 
 
-    /**
+   /**
      * @ORM\Column(
-     * name="tester",
+     * name="content",
      * type="string",
-     * options={"default":"kebabine"},
+     * options={"default":""},
      * )
      */
-    protected $content = "kebabine";
+    protected $content = "";
 
     public function getId(){
         return $this->id;
