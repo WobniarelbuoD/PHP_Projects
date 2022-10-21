@@ -1,6 +1,6 @@
 # This project does not have a soul (:
  <pre>
- This is my forth asignment from my instructor.
+ This is my fourth asignment from my instructor.
 
 Before you start i'd recommend reading the entire readme.
 
