@@ -42,7 +42,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     $user = $entityManager->getRepository('model\Users')->findBy(array('Emails' => 'admin@mail.com'));
     if($user[0]->getPasswords() === $_POST['password']){
         $_SESSION['admin'] = 1;
-        header("Location: http://localhost/projects/project_without_a_soul/home");
+        redirect_to_root();
     }
     else{
         $_POST['failed'] = 'Wrong email or password';
@@ -52,6 +52,5 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 //logout call
 if(isset($_POST['logout'])){
     session_destroy();
-    header("Location: http://localhost/projects/project_without_a_soul/home");
-}
+    redirect_to_root();}
 ?>
